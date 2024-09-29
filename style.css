@@ -1,79 +1,47 @@
 body{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    background-color: black;
-}
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   justify-content: center;
+   background-color: pink;
 
-.main-container{
-    max-width: 550px;
-    padding: 10px;
 }
-
-.main-container img{
-    max-width: 90%;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-.main-container h1{
+h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
     color: white;
-    font-weight: 500;
-    
-
-}
-.main-container p{
-    color: white;
-    margin: 15px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    white-space: nowrap;
 
 }
 .btn{
-   background-color: white ;
+   padding: 30px 50px; 
+   background-color: white;
    border: none;
-   padding: 10px 20px;
+   margin: 10px;
+   font-size: 30px;
+   min-width: 200px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,.3);
+   background-image: url("images/kick.png");
+   background-size: cover;
+   /* color: white; */
+   font-family: corsive;
+   text-shadow: 2px 2px 4px rgba(0,0,0,.3);
    cursor: pointer;
-   border-radius: 5px;
+   text-transform: capitalize;
 }
-.btn:hover{
-    background-color: orange;
-}
-.trailer-container{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 0.7s;
-}
-.active.trailer-container{
-      visibility: hidden;
-      opacity: 0;
-}
-.trailer-container video{
-    position: relative;
-    max-width: 900px;
-    outline: none;
+.container{
+   text-align: center;
 
 }
-@media (max-width:991px){
-    .trailer-container video{
-        max-width: 90%;
-    }
+.btn:hover{
+   color: pink;
+
 }
-.close-icon{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: white;
-    cursor: pointer;
+.btn:active{
+   background-size: 105%;
 }
